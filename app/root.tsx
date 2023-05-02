@@ -11,7 +11,7 @@ import {
 } from "@remix-run/react";
 import { withEmotionCache } from "@emotion/react";
 import { ChakraProvider } from "@chakra-ui/react";
-import { ServerStyleContext, ClientStyleContext } from "./context";
+import { ServerStyleContext, ClientStyleContext } from "./utils/context";
 
 import { getUser } from "~/session.server";
 import stylesheet from "~/tailwind.css";
