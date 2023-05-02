@@ -6,8 +6,9 @@ import {
   Heading,
   Text,
   Image,
+  Link,
 } from "@chakra-ui/react";
-import { Link } from "@remix-run/react";
+import { Link as RemixLink } from "@remix-run/react";
 import logo from "~/shared/assets/chasers-juice-logo.png";
 import { SocialMediaLinks } from "./SocialMediaLinks";
 
@@ -37,8 +38,26 @@ export const Footer = () => {
               Contact Us
             </Heading>
 
-            <Link to="tel:416-259-1557">416-259-1557</Link>
-            <Link to="mailto:orders@chasersjuice.com">
+            <Link
+              as={RemixLink}
+              fontSize="sm"
+              transition="ease"
+              transitionDuration="200ms"
+              _hover={{ color: "primary.600" }}
+              display="block"
+              to="tel:416-259-1557"
+            >
+              416-259-1557
+            </Link>
+            <Link
+              as={RemixLink}
+              fontSize="sm"
+              transition="ease"
+              transitionDuration="200ms"
+              _hover={{ color: "primary.600" }}
+              display="block"
+              to="mailto:orders@chasersjuice.com"
+            >
               orders@chasersjuice.com
             </Link>
           </Box>
