@@ -29,7 +29,7 @@ const navigationItems = [
   { label: "Contact Us", route: "." },
 ];
 
-export default function Nav() {
+export const Nav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const [isLargerThanTablet] = useMediaQuery("(min-width: 768px)");
@@ -149,4 +149,4 @@ export default function Nav() {
       )}
     </Flex>
   );
-}
+};

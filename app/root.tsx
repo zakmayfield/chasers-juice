@@ -16,7 +16,7 @@ import { ServerStyleContext, ClientStyleContext } from "./utils/context";
 import { getUser } from "~/session.server";
 import stylesheet from "~/tailwind.css";
 import { useContext, useEffect } from "react";
-import Nav from "./layout/Nav";
+import { Footer, Nav } from "./layout";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -86,6 +86,7 @@ export default function App() {
       <ChakraProvider>
         <Nav />
         <Outlet />
+        <Footer />
       </ChakraProvider>
     </Document>
   );
