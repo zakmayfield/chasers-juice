@@ -20,7 +20,7 @@ export default function HomeStatement() {
         <Text my="8" fontWeight="light">
           With specially crafted recipes and a focus on consistency, the Chasers
           Juice team works hard to create delicious, 100% freshly pressed juice.
-          There is nothing fresher than juice that is juiced and delivered on
+          There is nothing more delicious than juice that is juiced and delivered on
           the same day!
         </Text>
         <Button as={RemixLink} to={routes.about}>
