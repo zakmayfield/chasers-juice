@@ -1,4 +1,3 @@
-import { Button } from "@chakra-ui/react";
 import type { V2_MetaFunction } from "@remix-run/node";
 import HomePage from "~/features/home/HomePage";
 
