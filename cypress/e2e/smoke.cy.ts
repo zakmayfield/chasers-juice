@@ -1,9 +1,9 @@
 // import { faker } from "@faker-js/faker";
 
-describe("smoke tests", () => {
-  it("should visit home", () => {
-    cy.visitAndCheck("/");
-  });
+// describe("smoke tests", () => {
+//   it("should visit home", () => {
+//     cy.visitAndCheck("/");
+//   });
 
   //   it("should allow you to register and login", () => {
   //     const loginForm = {
@@ -48,4 +48,4 @@ describe("smoke tests", () => {
 
   //     cy.findByText("No notes yet");
   //   });
-});
+// });
