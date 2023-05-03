@@ -1,6 +1,7 @@
-import { Box, Heading, Text, Button } from '@chakra-ui/react';
+import { Box, Heading, Text, Button } from "@chakra-ui/react";
 import { Link as RemixLink } from "@remix-run/react";
-import { ContentContainer } from '~/shared/components';
+import { ContentContainer } from "~/shared/components";
+import routes from "~/shared/routes";
 
 export default function HomeStatement() {
   return (
@@ -22,7 +23,7 @@ export default function HomeStatement() {
           There is nothing fresher than juice that is juiced and delivered on
           the same day!
         </Text>
-        <Button as={RemixLink} to=".">
+        <Button as={RemixLink} to={routes.about}>
           Learn more
         </Button>
       </ContentContainer>
