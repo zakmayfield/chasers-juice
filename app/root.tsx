@@ -17,6 +17,7 @@ import { getUser } from "~/session.server";
 import stylesheet from "~/tailwind.css";
 import { useContext, useEffect } from "react";
 import { Footer, Nav } from "./layout";
+import theme from "./theme";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -83,7 +84,7 @@ const Document = withEmotionCache(
 export default function App() {
   return (
     <Document>
-      <ChakraProvider>
+      <ChakraProvider theme={theme}>
         <Nav />
         <Outlet />
         <Footer />
