@@ -48,7 +48,7 @@ const InstagramSwiper = () => {
 export const InstagramGallery = () => {
   return (
     <Box>
-      <ContentContainer maxW='container.2xl' py='12'>
+      <ContentContainer maxW='container.2xl' py='12' px="0">
         <InstagramSwiper />
       </ContentContainer>
     </Box>
