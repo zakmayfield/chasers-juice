@@ -20,13 +20,14 @@ import { motion } from "framer-motion";
 import logo from "~/shared/assets/chasers-juice-logo.png";
 import { ContentContainer } from "~/shared/components";
 import { Link } from "@remix-run/react";
+import routes from "~/shared/routes";
 
 const navigationItems = [
-  { label: "Home", route: "/" },
-  { label: "About Us", route: "." },
-  { label: "Products", route: "." },
-  { label: "F.A.Q.", route: "." },
-  { label: "Contact Us", route: "." },
+  { label: "Home", route: routes.home },
+  { label: "About Us", route: routes.about },
+  { label: "Products", route: routes.products },
+  { label: "F.A.Q.", route: routes.faq },
+  { label: "Contact Us", route: routes.contact },
 ];
 
 export const Nav = () => {
@@ -82,7 +83,7 @@ export const Nav = () => {
                 exit={{ opacity: 0, x: 50 }}
                 transition="0.1s linear"
               >
-                <Button as={Link} to=".">
+                <Button as={Link} to={routes.contact}>
                   Order
                 </Button>
               </ListItem>
@@ -139,7 +140,7 @@ export const Nav = () => {
               ))}
 
               <ListItem mt="8">
-                <Button as={Link} to="/">
+                <Button as={Link} to={routes.contact}>
                   Order
                 </Button>
               </ListItem>

@@ -11,6 +11,7 @@ import { Link as RemixLink } from "@remix-run/react";
 import { HeroAnimatedText } from "./HeroAnimatedText";
 import FeaturedJuice from "~/shared/assets/home/centre-juice.png";
 import FeaturedFruit from "~/shared/assets/home/fruit-splash.png";
+import routes from "~/shared/routes";
 
 export const HomeHero = () => {
   const [isLargerThanTablet] = useMediaQuery("(min-width: 768px)");
@@ -97,7 +98,7 @@ export const HomeHero = () => {
               </Text>
             )}
           </Box>
-          <Button as={RemixLink} to="." mt="6" size={{ sm: "md", base: "sm" }}>
+          <Button as={RemixLink} to={routes.contact} mt="6" size={{ sm: "md", base: "sm" }}>
             Order
           </Button>
         </Box>
