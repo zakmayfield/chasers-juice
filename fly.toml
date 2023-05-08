@@ -14,7 +14,7 @@ source = "data"
 destination = "/data"
 
 [[services]]
-internal_port = 8_080
+internal_port = 8080
 processes = [ "app" ]
 protocol = "tcp"
 script_checks = [ ]
@@ -27,7 +27,6 @@ script_checks = [ ]
   [[services.ports]]
   handlers = [ "http" ]
   port = 80
-  force_https = true
 
   [[services.ports]]
   handlers = [ "tls", "http" ]
@@ -46,5 +45,5 @@ script_checks = [ ]
   path = "/healthcheck"
   protocol = "http"
   timeout = "2s"
-  tls_skip_verify = false
+  tls_skip_verify = true
   headers = { }
